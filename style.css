@@ -20,7 +20,11 @@
   --accent-blue-light: #eff6ff;
   --accent-blue-border: #bfdbfe;
 
-  --bg-primary: #fbfbf8;
+  --bg-primary: #f5f1e8;
+  --bg-surface: #fbf6ec;
+  --warm-100: #f3e7d4;
+  --warm-200: #e2cfb1;
+  --warm-500: #735732;
   --bg-pattern: radial-gradient(var(--slate-200) 1px, transparent 1px);
   --bg-size: 22px 22px;
   --bg-position: center top;
@@ -57,8 +61,9 @@ h4 {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 40px;
-  background: var(--bg-primary);
-  box-shadow: 0 0 40px rgba(255,255,255,1), 0 0 80px rgba(255,255,255,1);
+  background: var(--bg-surface);
+  box-shadow: none;
+  border: 1px solid rgba(138, 97, 31, 0.12);
 }
 
 /* ================= Navbar ================= */
@@ -282,9 +287,9 @@ a:hover {
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
-  color: var(--slate-500);
-  background: var(--slate-50);
-  border: 1px solid var(--slate-200);
+  color: var(--warm-500);
+  background: var(--warm-100);
+  border: 1px solid var(--warm-200);
   padding: 4px 10px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -309,18 +314,18 @@ a:hover {
   /* Fallback if .project-tech is still a 'p' on other pages */
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--slate-600);
-  background-color: var(--slate-50);
+  color: var(--warm-500);
+  background-color: var(--warm-100);
   padding: 4px 10px;
   border-radius: 4px;
-  border: 1px solid var(--slate-200);
+  border: 1px solid var(--warm-200);
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 
 .project-tech span:hover {
-  background-color: var(--slate-100);
-  border-color: var(--slate-300);
-  color: var(--slate-800);
+  background-color: #f6e4c7;
+  border-color: #dcc394;
+  color: var(--warm-500);
 }
 
 /* For pages where project-tech is just text in a p tag */
@@ -375,9 +380,9 @@ p.project-tech {
   max-width: 760px;
   height: auto;
   border-radius: 8px;
-  background: var(--slate-50);
+  background: var(--bg-surface);
   padding: 8px;
-  border: 1px solid var(--slate-200);
+  border: 1px solid var(--warm-200);
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
 }
 
@@ -403,9 +408,9 @@ p.project-tech {
   padding: 8px 16px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--slate-900);
-  background: var(--slate-50);
-  border: 1px solid var(--slate-300);
+  color: var(--warm-500);
+  background: var(--warm-100);
+  border: 1px solid var(--warm-200);
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -414,10 +419,10 @@ p.project-tech {
 }
 
 .github-btn:hover {
-  background: var(--slate-100);
-  border-color: var(--slate-400);
+  background: #f6e4c7;
+  border-color: #dcc394;
   transform: translateY(-1px);
-  color: var(--slate-900); /* Keep it from turning blue from global a:hover */
+  color: var(--warm-500); /* Keep it from turning blue from global a:hover */
 }
 
 /* Contact Page */
